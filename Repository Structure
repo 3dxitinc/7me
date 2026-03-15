@@ -1,0 +1,30 @@
+7me/
+├── package.json
+├── README.md
+├── .gitignore
+├── backend/
+│   ├── package.json
+│   ├── index.js
+│   ├── .env.example
+│   ├── seed/seedData.js
+│   └── ai/
+│       ├── vectorTwinSearch.js
+│       └── celebritySearch.js
+├── ai-transform/
+│   ├── Dockerfile
+│   ├── main.py
+│   ├── age_engine.py
+│   ├── region_engine.py
+│   ├── era_engine.py
+│   └── requirements.txt
+├── mobile/
+│   ├── package.json
+│   ├── App.js
+│   ├── screens/
+│   │   ├── Home.js
+│   │   ├── CameraScreen.js
+│   │   ├── TwinResults.js
+│   │   ├── CelebrityResults.js
+│   │   ├── TwinMap.js
+│   │   └── TransformStudio.js
+│   └── services/api.js
