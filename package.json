@@ -1,1 +1,14 @@
-
+{
+  "name": "7me",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "start:backend": "cd backend && npm install && firebase emulators:start",
+    "start:ai": "cd ai-transform && pip install -r requirements.txt && docker build -t ai-transform . && docker run -p 8000:8000 ai-transform",
+    "start:mobile": "cd mobile && npm install && expo start",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:ai\" \"npm run start:mobile\""
+  }
+}
